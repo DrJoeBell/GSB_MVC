@@ -2,6 +2,9 @@
 
 class Controller_MonCompte extends Controller {
 
+
+	public $template = 'Compte';
+
 	public function action_index()
 	{
 		$this->response->body('Mon Compte');

@@ -15,9 +15,13 @@
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mon Compte <b class="caret"></b></a>
-                    </li>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Mon Compte <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="download">
+                <li><a href="monCompte/modifier">Modifier les infos</a></li>
+                <li><a href="logout">Deconnexion</a></li>
+              </ul>
+            </li>
                   </ul>
                 </div>
               </div>
-            </div><!-- /example -->
+            </div>

@@ -1,12 +1,7 @@
-<footer>
-        <div class="jumbotron">
-          ceci est le footer ^^
-        </div>
+  <footer>
+    dans le footer
 
-      </footer>
-
-
-    </div>
+  </footer>
 
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
