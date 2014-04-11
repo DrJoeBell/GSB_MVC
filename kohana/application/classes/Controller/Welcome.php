@@ -13,21 +13,21 @@ class Controller_Welcome extends Controller {
 		<a href="'.url::base().'index.php/">Modifier mon compte</a>
 		<ul>
 			<li>
-				<a href="'.url::base().'index.php/">Medicament</a>
+				<a href="'.url::base().'index.php/medicament">Medicament</a>
 			</li>
 			<li>
-				<a href="'.url::base().'index.php/">Ajouter</a>
+				<a href="'.url::base().'index.php/medicament/ajouter">Ajouter</a>
 			</li>
 			<li>
-				<a href="'.url::base().'index.php/">Supprimer</a>
+				<a href="'.url::base().'index.php/medicament/supprimer/1">Supprimer</a>
 			</li>
 			<li>
-				<a href="'.url::base().'index.php/">Modifier</a>
+				<a href="'.url::base().'index.php/medicament/modifier/2">Modifier</a>
 			</li>
 		</ul>
 		<ul>
 			<li>
-				<a href="'.url::base().'index.php/">Compte rendu</a>
+				<a href="'.url::base().'index.php/compteRendu">Compte rendu</a>
 			</li>
 			<li>
 				<a href="'.url::base().'index.php/">Ajouter</a>
