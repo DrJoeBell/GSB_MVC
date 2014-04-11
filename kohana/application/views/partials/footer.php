@@ -1,6 +1,5 @@
   <footer>
     dans le footer
-
   </footer>
 
 

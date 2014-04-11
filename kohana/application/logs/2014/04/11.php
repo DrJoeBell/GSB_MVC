@@ -548,3 +548,39 @@
 2014-04-11 07:46:28 --- CRITICAL: ErrorException [ 1 ]: Call to a member function content() on a non-object ~ APPPATH\classes\Controller\Welcome.php [ 9 ] in file:line
 2014-04-11 07:46:28 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
 #1 {main} in file:line
+2014-04-11 08:18:57 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' ~ APPPATH\classes\Controller\Welcome.php [ 10 ] in file:line
+2014-04-11 08:18:57 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-04-11 08:19:14 --- CRITICAL: ErrorException [ 1 ]: Call to undefined method Controller_Welcome::set() ~ APPPATH\classes\Controller\Welcome.php [ 10 ] in file:line
+2014-04-11 08:19:14 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-04-11 08:22:38 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected '}' ~ APPPATH\classes\Controller\Welcome.php [ 14 ] in file:line
+2014-04-11 08:22:38 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-04-11 08:25:58 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected '->' (T_OBJECT_OPERATOR) ~ APPPATH\classes\Controller\Welcome.php [ 11 ] in file:line
+2014-04-11 08:25:58 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-04-11 08:26:21 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected '->' (T_OBJECT_OPERATOR) ~ APPPATH\classes\Controller\Welcome.php [ 11 ] in file:line
+2014-04-11 08:26:21 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-04-11 08:26:32 --- CRITICAL: ErrorException [ 1 ]: Cannot pass parameter 2 by reference ~ APPPATH\classes\Controller\Welcome.php [ 11 ] in file:line
+2014-04-11 08:26:32 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-04-11 08:26:41 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected ',' ~ APPPATH\classes\Controller\Welcome.php [ 10 ] in file:line
+2014-04-11 08:26:41 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-04-11 08:26:42 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected ',' ~ APPPATH\classes\Controller\Welcome.php [ 10 ] in file:line
+2014-04-11 08:26:42 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-04-11 08:26:52 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected ',' ~ APPPATH\classes\Controller\Welcome.php [ 10 ] in file:line
+2014-04-11 08:26:52 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-04-11 08:28:02 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected ')' ~ APPPATH\classes\Controller\Welcome.php [ 10 ] in file:line
+2014-04-11 08:28:02 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-04-11 08:28:17 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected '->' (T_OBJECT_OPERATOR) ~ APPPATH\classes\Controller\Welcome.php [ 11 ] in file:line
+2014-04-11 08:28:17 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-04-11 08:28:44 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected '->' (T_OBJECT_OPERATOR) ~ APPPATH\classes\Controller\Welcome.php [ 11 ] in file:line
+2014-04-11 08:28:44 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
