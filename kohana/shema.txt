@@ -2,10 +2,10 @@ localhost/kohana/
 localhost/kohana/index.php
 localhost/kohana/index.php/login
 localhost/kohana/index.php/logout
-localhost/kohana/index.php/medicaments
-localhost/kohana/index.php/medicaments/ajouter
-localhost/kohana/index.php/medicaments/supprimer/2
-localhost/kohana/index.php/medicaments/modifier/2
+localhost/kohana/index.php/medicament
+localhost/kohana/index.php/medicament/ajouter
+localhost/kohana/index.php/medicament/supprimer/2
+localhost/kohana/index.php/medicament/modifier/2
 localhost/kohana/index.php/compteRendu
 localhost/kohana/index.php/compteRendu/ajouter
 localhost/kohana/index.php/compteRendu/supprimer/2
