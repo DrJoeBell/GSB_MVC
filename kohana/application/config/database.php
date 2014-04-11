@@ -18,7 +18,7 @@ return array
         'connection' => array(
             'hostname'   => 'localhost',
             'username'   => 'root',
-            'password'   => 'valentin',
+            'password'   => '',
             'persistent' => FALSE,
             'database'   => 'usersio_gsb',
         ),
