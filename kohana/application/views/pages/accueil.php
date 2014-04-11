@@ -1,6 +1,6 @@
 <?php
-    include ('header.php');
-    include ('navbar.php');
+    include (APPPATH.'views/partials/header.php');
+    include (APPPATH.'views/partials/navbar.php');
 ?>
 
     <body>

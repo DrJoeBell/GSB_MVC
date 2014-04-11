@@ -542,3 +542,9 @@
 #7 C:\wamp\www\GSB_MVC\kohana\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
 #8 C:\wamp\www\GSB_MVC\kohana\index.php(118): Kohana_Request->execute()
 #9 {main} in C:\wamp\www\GSB_MVC\kohana\modules\database\classes\Kohana\Database\MySQL.php:75
+2014-04-11 07:45:19 --- CRITICAL: ErrorException [ 1 ]: Call to undefined method Controller_Welcome::response() ~ APPPATH\classes\Controller\Welcome.php [ 8 ] in file:line
+2014-04-11 07:45:19 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-04-11 07:46:28 --- CRITICAL: ErrorException [ 1 ]: Call to a member function content() on a non-object ~ APPPATH\classes\Controller\Welcome.php [ 9 ] in file:line
+2014-04-11 07:46:28 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
