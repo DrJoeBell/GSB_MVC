@@ -14,5 +14,5 @@ localhost/kohana/index.php/medecin
 localhost/kohana/index.php/medecin/ajouter
 localhost/kohana/index.php/medecin/supprimer/2
 localhost/kohana/index.php/medecin/modifier/2
-localhost/kohana/index.php/mon-compte
-localhost/kohana/index.php/mon-compte/modifier
+localhost/kohana/index.php/monCompte
+localhost/kohana/index.php/monCompte/modifier
