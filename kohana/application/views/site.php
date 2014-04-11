@@ -11,14 +11,7 @@
         <h1><?php echo $message; ?></h1>
         <p>We just wanted to say it! :)</p>
 
-        
-<?php
-
-    $rea = $bdd->query("SELECT COUNT(users.id) FROM users")->fetch();
-
-    echo $rea;
 
 
-    ?>
     </body>
 </html>

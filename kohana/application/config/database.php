@@ -43,7 +43,6 @@ return array
 
 
 
-// This would connect to the database defined as 'default'
-$default = Database::instance();
+
 
 
