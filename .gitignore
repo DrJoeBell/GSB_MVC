@@ -1,1 +1,2 @@
 kohana/application/logs/*
+kohana/application/config/database.php
