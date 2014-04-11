@@ -10,7 +10,7 @@ class Controller_Welcome extends Controller {
 		<a href="'.url::base().'index.php/login">login</a>
 		<a href="'.url::base().'index.php/logout">logout</a>
 		<a href="'.url::base().'index.php/monCompte">Mon compte</a>
-		<a href="'.url::base().'index.php/">Modifier mon compte</a>
+		<a href="'.url::base().'index.php/monCompte/modifier">Modifier mon compte</a>
 		<ul>
 			<li>
 				<a href="'.url::base().'index.php/medicament">Medicament</a>
@@ -30,27 +30,27 @@ class Controller_Welcome extends Controller {
 				<a href="'.url::base().'index.php/compteRendu">Compte rendu</a>
 			</li>
 			<li>
-				<a href="'.url::base().'index.php/">Ajouter</a>
+				<a href="'.url::base().'index.php/compteRendu/ajouter">Ajouter</a>
 			</li>
 			<li>
-				<a href="'.url::base().'index.php/">Supprimer</a>
+				<a href="'.url::base().'index.php/compteRendu/supprimer/1">Supprimer</a>
 			</li>
 			<li>
-				<a href="'.url::base().'index.php/">Modifier</a>
+				<a href="'.url::base().'index.php/compteRendu/modifier/2">Modifier</a>
 			</li>
 		</ul>
 		<ul>
 			<li>
-				<a href="'.url::base().'index.php/">Médecin</a>
+				<a href="'.url::base().'index.php/medecin">Médecin</a>
 			</li>
 			<li>
-				<a href="'.url::base().'index.php/">Ajouter</a>
+				<a href="'.url::base().'index.php/medecin/ajouter">Ajouter</a>
 			</li>
 			<li>
-				<a href="'.url::base().'index.php/">Supprimer</a>
+				<a href="'.url::base().'index.php/medecin/supprimer/1">Supprimer</a>
 			</li>
 			<li>
-				<a href="'.url::base().'index.php/">Modifier</a>
+				<a href="'.url::base().'index.php/medecin/modifier/2">Modifier</a>
 			</li>
 		</ul>
 
