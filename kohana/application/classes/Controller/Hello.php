@@ -10,11 +10,11 @@ Class Controller_Hello extends Controller_Template
 		$default = Database::instance();
 
 		$result = $default->query(Database::SELECT, 'SELECT * FROM visiteur');
-		var_dump($result->get('NOM'));
+		//var_dump($result->get('NOM'));
 
 
 
-		var_dump($default);
+		//var_dump($default);
 
         $this->template->message = 'hello, world!';
     }
