@@ -1,9 +1,9 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Login extends Controller {
+class Controller_Logout extends Controller {
 
 	public function action_index()
 	{
-		$this->response->body('login');
+		$this->response->body('logout');
 	}
-} // End Login
+} // End Logout

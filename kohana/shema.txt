@@ -6,10 +6,10 @@ localhost/kohana/index.php/medicaments
 localhost/kohana/index.php/medicaments/ajouter
 localhost/kohana/index.php/medicaments/supprimer/2
 localhost/kohana/index.php/medicaments/modifier/2
-localhost/kohana/index.php/compte-rendu
-localhost/kohana/index.php/compte-rendu/ajouter
-localhost/kohana/index.php/compte-rendu/supprimer/2
-localhost/kohana/index.php/compte-rendu/modifier/2
+localhost/kohana/index.php/compteRendu
+localhost/kohana/index.php/compteRendu/ajouter
+localhost/kohana/index.php/compteRendu/supprimer/2
+localhost/kohana/index.php/compteRendu/modifier/2
 localhost/kohana/index.php/medecin
 localhost/kohana/index.php/medecin/ajouter
 localhost/kohana/index.php/medecin/supprimer/2
