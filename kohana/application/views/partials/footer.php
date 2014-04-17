@@ -1,5 +1,5 @@
   <footer>
-    dans le footer
+    Le footer
   </footer>
 
 
