@@ -1,6 +1,9 @@
 <?php
     include (APPPATH.'views/partials/header.php');
     include (APPPATH.'views/partials/navbar.php');
+    if (isset($medecin)) {
+        var_dump($medecin);
+    }
 ?>
 
     <body>
