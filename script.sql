@@ -1,66 +1,24 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.9
+-- version 4.0.7
 -- http://www.phpmyadmin.net
 --
--- Client :  localhost:8889
--- Généré le :  Ven 11 Avril 2014 à 13:50
--- Version du serveur :  5.5.34
--- Version de PHP :  5.5.10
+-- Client: mysql1.alwaysdata.com
+-- Généré le: Jeu 17 Avril 2014 à 09:22
+-- Version du serveur: 5.1.66-0+squeeze1
+-- Version de PHP: 5.3.6-11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
---
--- Base de données :  `usersio_gsb`
---
 
--- --------------------------------------------------------
-
---
--- Structure de la table `categories`
---
-
-CREATE TABLE `categories` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL,
-  `slug` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=74 ;
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
 
 --
--- Contenu de la table `categories`
+-- Base de données: `usersio_gsb`
 --
-
-INSERT INTO `categories` (`id`, `name`, `slug`) VALUES
-(73, 'Reveal', 'reveal'),
-(71, 'Travaux PPE', 'ppe'),
-(72, 'Stages', 'stages');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `images`
---
-
-CREATE TABLE `images` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL,
-  `work_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `work_id` (`work_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=65 ;
-
---
--- Contenu de la table `images`
---
-
-INSERT INTO `images` (`id`, `name`, `work_id`) VALUES
-(62, '62.png', 6),
-(37, '37.png', 8),
-(33, '33.png', 6),
-(31, '31.png', 5),
-(32, '32.png', 5),
-(61, '61.jpg', 28);
 
 -- --------------------------------------------------------
 
@@ -68,7 +26,7 @@ INSERT INTO `images` (`id`, `name`, `work_id`) VALUES
 -- Structure de la table `medecin`
 --
 
-CREATE TABLE `medecin` (
+CREATE TABLE IF NOT EXISTS `medecin` (
   `ID` varchar(32) NOT NULL,
   `ID_POSSEDE` varchar(32) NOT NULL,
   `NOM` varchar(255) DEFAULT NULL,
@@ -105,7 +63,7 @@ INSERT INTO `medecin` (`ID`, `ID_POSSEDE`, `NOM`, `PRENOM`, `ADRESSE`, `VILLE_ME
 -- Structure de la table `motif`
 --
 
-CREATE TABLE `motif` (
+CREATE TABLE IF NOT EXISTS `motif` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `libelle` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -127,7 +85,7 @@ INSERT INTO `motif` (`id`, `libelle`) VALUES
 -- Structure de la table `rapport`
 --
 
-CREATE TABLE `rapport` (
+CREATE TABLE IF NOT EXISTS `rapport` (
   `ID` int(32) NOT NULL AUTO_INCREMENT,
   `ID_REDIGER` varchar(32) CHARACTER SET latin1 DEFAULT NULL,
   `ID_CONCERNE` varchar(32) CHARACTER SET latin1 DEFAULT NULL,
@@ -158,7 +116,7 @@ INSERT INTO `rapport` (`ID`, `ID_REDIGER`, `ID_CONCERNE`, `DATERAPPORT`, `MOTIF`
 -- Structure de la table `specialite`
 --
 
-CREATE TABLE `specialite` (
+CREATE TABLE IF NOT EXISTS `specialite` (
   `ID` varchar(32) CHARACTER SET latin1 NOT NULL,
   `LIBELLE` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
   PRIMARY KEY (`ID`)
@@ -179,30 +137,10 @@ INSERT INTO `specialite` (`ID`, `LIBELLE`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `users`
---
-
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
-
---
--- Contenu de la table `users`
---
-
-INSERT INTO `users` (`id`, `username`, `password`) VALUES
-(11, 'val', '815ca0eefa8c9f1b360248ce889f33ae1a8915bb');
-
--- --------------------------------------------------------
-
---
 -- Structure de la table `visiteur`
 --
 
-CREATE TABLE `visiteur` (
+CREATE TABLE IF NOT EXISTS `visiteur` (
   `ID` varchar(32) CHARACTER SET latin1 NOT NULL,
   `NOM` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
   `PRENOM` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
@@ -232,34 +170,6 @@ INSERT INTO `visiteur` (`ID`, `NOM`, `PRENOM`, `LOGIN`, `PASSWORD`, `ADRESSE`, `
 ('8', 'ADMIN', 'Valentin', 'val', '202cb962ac59075b964b07152d234b70', '15, rue de la joie', 'Nantes', '44000', 'moi@moi.moi', '01/01/2001'),
 ('9', 'ADMIN', 'Clément', 'clement', '202cb962ac59075b964b07152d234b70', '42, rue de l''indice', 'New-York', '99011', 'tit@titi.fr', 'ADMIN');
 
--- --------------------------------------------------------
-
---
--- Structure de la table `works`
---
-
-CREATE TABLE `works` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL,
-  `slug` varchar(255) NOT NULL,
-  `content` longtext NOT NULL,
-  `category_id` int(11) NOT NULL,
-  `image_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `category_id` (`category_id`),
-  KEY `image_id` (`image_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=29 ;
-
---
--- Contenu de la table `works`
---
-
-INSERT INTO `works` (`id`, `name`, `slug`, `content`, `category_id`, `image_id`) VALUES
-(6, 'Stage CNAM', 'stage-cnam', '<p>compte rendu du stage</p>', 72, 33),
-(5, 'PPE GSB', 'gbs', '<p>je ne sais pas encore quoi mettre</p>', 71, 32),
-(8, 'Stage Accenture', 'stage-accenture', '<p>onfizej fziejf$ z</p>', 72, 37),
-(28, 'zegergeergerge', 'ergergeg', '<div>qertheqrhgedgre<br /><br />sdfzefzef</div>\r\n<p>popo</p>', 71, 61);
-
 --
 -- Contraintes pour les tables exportées
 --
@@ -277,3 +187,7 @@ ALTER TABLE `rapport`
   ADD CONSTRAINT `rapport_ibfk_1` FOREIGN KEY (`ID_CONCERNE`) REFERENCES `medecin` (`ID`),
   ADD CONSTRAINT `rapport_ibfk_2` FOREIGN KEY (`ID_REDIGER`) REFERENCES `visiteur` (`ID`),
   ADD CONSTRAINT `rapport_ibfk_3` FOREIGN KEY (`MOTIF`) REFERENCES `motif` (`id`);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
