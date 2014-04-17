@@ -3,6 +3,7 @@
     include (APPPATH.'views/partials/navbar.php');
     if (isset($medecin)) {
         var_dump($medecin);
+        var_dump($specialite);
     }
 ?>
 
@@ -25,6 +26,7 @@
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
         </div>
+        <?= $message_error;?>
     </body>
 
 
