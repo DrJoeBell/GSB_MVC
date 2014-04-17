@@ -3,7 +3,7 @@
 class Controller_MonCompte extends Controller {
 
 
-	public $template = 'Compte';
+	public $template = 'pages/compte';
 
 	public function action_index()
 	{

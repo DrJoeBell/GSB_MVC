@@ -5,10 +5,8 @@
 
     <body>
         <div class="container">
+            <h1>page compte.php</h1>
             <h1><?php echo $message; ?></h1>
-            <p>We just wanted to say it! :)</p>
-            <br><br>
-            <?php echo $valentin; ?>
 
         </div>
     </body>
