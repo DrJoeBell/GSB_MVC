@@ -2,11 +2,22 @@
 
 class Controller_Medecin extends Controller {
 
-	public function action_index()
+	public function action_view()
 	{
+		$param1=$this->request->param('param1');
+		$default = Database::instance();
+		$result=$default->query(Database::SELECT,'SELECT * FROM medecin WHERE ID='.$param1);
+		$rows = $result->as_array('ID');
 		$this->response->body('Médecin');
 	}
-
+	public function action_page()
+	{
+		$param1=$this->request->param('param1');
+		$default = Database::instance();
+		$result=$default->query(Database::SELECT,'SELECT * FROM medecin WHERE ID='.$param1);
+		$rows = $result->as_array('ID');
+		$this->response->body('Médecin');
+	}
 	public function action_ajouter()
 	{
 		$this->response->body('ajouter');
