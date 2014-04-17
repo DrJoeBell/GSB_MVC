@@ -3,7 +3,7 @@
 return array(
 
 	'driver'       => 'File',
-	'hash_method'  => 'sha256',
+	'hash_method'  => 'md5',
 	'hash_key'     => NULL,
 	'lifetime'     => 1209600,
 	'session_type' => Session::$default,
