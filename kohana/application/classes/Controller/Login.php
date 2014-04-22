@@ -4,6 +4,8 @@ class Controller_Login extends Controller {
 
 	public function action_index()
 	{
-		$this->response->body('login');
+		$view = View::factory('pages/signin');
+
+		$this->response->body($view);
 	}
 } // End Login
